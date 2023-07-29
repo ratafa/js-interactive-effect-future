@@ -1,0 +1,14 @@
+.figureContainer {
+  position: absolute;
+  margin-top: 27vh;
+  border-radius: 10px;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: 55vh;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

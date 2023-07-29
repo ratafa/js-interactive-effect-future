@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&family=Noto+Serif+KR:wght@500&display=swap');
+
+.displayWrapper {
+  display: none;
+  padding: 10px 30px 30px 30px;
+}
+
+.dummyBox{
+  visibility: hidden;
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  z-index: 100;
+}
+
+.displayText {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Handjet', monospace;
+  white-space: pre-line;
+  color: #05d1e1;
+  filter: drop-shadow(0 0 2px #e4d808);
+}
+
+.displayTextDescription {
+  display: none;
+  position: absolute;
+  top: 95vh;
+  left: 35%;
+  color: white;
+  animation: motion 0.7s linear infinite alternate;
+}
+
+@keyframes motion {
+  0% {margin-top: 0;}
+  100% {margin-top: 11px;}
+}

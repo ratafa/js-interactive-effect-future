@@ -1,0 +1,13 @@
+.swiper {
+  width: 85%;
+  height: 70%;
+  padding-bottom: 200px;
+}
+ .swiper-slide {
+   background-size: cover;
+   background-position: center;
+   width: 25px;
+   height: 25px;
+   border-radius: 10px;
+   -webkit-box-reflect: below -110px linear-gradient(transparent, transparent, #006);
+ }
