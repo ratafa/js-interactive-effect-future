@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet&family=Noto+Serif+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
 
 .startButton{
   position: relative;
@@ -10,6 +12,12 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Handjet", sans-serif;
+}
+
+.buttonDescription {
+  color: white;
+  margin-top: 150px;
+  font-size: 11px;
 }
 
 .startButton::before, .startButton::after{
@@ -33,6 +41,24 @@
   left: -5px;
   text-shadow: -2px 0 #cc2a1f;
   animation: glitch-2 3s linear infinite reverse;
+}
+
+.startButton:hover {
+  transition: 0.5s ease-in;
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid #1f1f1f;
+  width: 60px;
+  height: 60px;
+  color: #1f1f1f;
+  background-color: #1f1f1f;
+}
+
+.startButton:hover:before, .startButton:hover:after {
+  animation: none;
+  text-shadow: none;
+  content: none;
+  padding: 0;
 }
 
 @keyframes glitch-1 {
