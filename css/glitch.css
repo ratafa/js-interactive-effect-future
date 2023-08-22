@@ -43,24 +43,6 @@
   animation: glitch-2 3s linear infinite reverse;
 }
 
-.startButton:hover {
-  transition: 0.5s ease-in;
-  border-radius: 25px;
-  padding: 10px;
-  border: 1px solid #1f1f1f;
-  width: 60px;
-  height: 60px;
-  color: #1f1f1f;
-  background-color: #1f1f1f;
-}
-
-.startButton:hover:before, .startButton:hover:after {
-  animation: none;
-  text-shadow: none;
-  content: none;
-  padding: 0;
-}
-
 @keyframes glitch-1 {
   0% {
     clip: rect(132px, auto, 101px, 30px);
