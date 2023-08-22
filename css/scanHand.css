@@ -16,7 +16,7 @@
   background-size: 300px;
 }
 
-.hand :before {
+.hand:before{
   content: '';
   position: absolute;
   top: 0;
@@ -55,11 +55,14 @@
 @keyframes animateLine {
   0%{
     top: 0;
+    backface-visibility: hidden;
+    will-change: top;
   }
   100% {
     top: 100%;
   }
 }
+
 .handScanText {
   font-family: 'VT323', monospace;
   width: 100%;
