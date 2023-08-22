@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.hand1{
+.hand{
   position: relative;
   width: 300px;
   height: 380px;
@@ -16,28 +16,30 @@
   background-size: 300px;
 }
 
-.hand2{
+.hand :before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 0;
+  height: 100%;
   background: url("../img/fingerPrint_02.png");
   background-size: 300px;
-  /*animation: animateScan 4s ease-in-out;*/
+  animation: animateScan 4s ease-in-out;
 }
 
-/*@keyframes animateScan {*/
-/*  0% {*/
-/*    height: 0;*/
-/*  }*/
-/*  100% {*/
-/*    height: 80%;*/
-/*  }*/
-/*}*/
+@keyframes animateScan {
+  0% {
+    height: 0;
+    backface-visibility: hidden;
+    will-change: height;
+  }
+  100% {
+    height: 100%;
+  }
+}
 
-.lines {
+.hand :after {
   content: '';
   position: absolute;
   top: 0;
@@ -46,25 +48,25 @@
   height: 8px;
   background: #3fefef;
   filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
-  /*animation: animateLine 4s ease-in-out;*/
-  /*animation-fill-mode: forwards;*/
+  animation: animateLine 4s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-/*@keyframes animateLine {*/
-/*  0%{*/
-/*    top: 0;*/
-/*  }*/
-/*  100% {*/
-/*    top: 80%;*/
-/*  }*/
-/*}*/
+@keyframes animateLine {
+  0%{
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
 .handScanText {
   font-family: 'VT323', monospace;
   width: 100%;
   text-align: center;
   margin-top: 60px;
   text-transform: uppercase;
-  font-size: 1.7em;
+  font-size: 1.8em;
   letter-spacing: 2px;
   color: #3fefef;
   filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
