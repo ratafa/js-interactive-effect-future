@@ -19,6 +19,7 @@
 .hand :before {
   content: '';
   position: absolute;
+  will-change: height;
   top: 0;
   left: 0;
   width: 100%;
